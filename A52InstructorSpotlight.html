@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerial Fifty Two</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #66bfbf;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #66bfbf;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 40%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+        font-weight: lighter;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+      .learnMore {
+        color: #66bfbf;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      .learnMore:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #66bfbf;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px black;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .vaness {
+        color: #66bfbf;
+      }
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgba(216, 241, 230, 0.46) 0.1%,
+          rgba(233, 226, 226, 0.28) 90.1%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><strong>Pole Dance and Fitness</strong></h1>
+      <h2><em>Instructor Spotlight: Vanessa</em></h2>
+      <img
+        src="
+
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/020/527/original/IMG-20210907-WA0012.jpg?1636139246"
+        alt="poleDancer"
+      />
+      <p>
+        Vanessa is a trained, certified pole dancer with over 10 years of dance
+        and pole experience. She brings a variety of unique skills to each class
+        and is currently teaching at Aerial Fifty Two pole dance studio in
+        Ontario.
+
+        <br />
+      </p>
+      <hr />
+      <ul>
+        <li><strong>Vanessa's Top 10 Benefits of Pole Dance</strong></li>
+        <li><strong>1. Relieve Stress</strong></li>
+        <li><strong>2. Increase Strength</strong></li>
+        <li><strong>3. Improves Coordination</strong></li>
+        <li><strong>4. Build Muscle</strong></li>
+        <li><strong>5. Tone your Abdominals</strong></li>
+        <li><strong>6. Burn Fat</strong></li>
+        <li><strong>7. Increase Flexibility</strong></li>
+        <li><strong>8. Increase yourself-esteem</strong></li>
+        <li><strong>9. Freedom of Self Expression</strong></li>
+        <li>
+          <strong>10. Become part of a diverse, accepting community</strong>
+        </li>
+      </ul>
+      <a href="https://aerialfiftytwo.com/" target="_blank" class="learnMore">
+        Learn More
+      </a>
+      <button class="buyButton">Sign Up For a Class</button>
+      <p class="footer">
+        This page was built by <span class="vaness">Vanessa Currie</span>
+      </p>
+    </div>
+    <script>
+      function apply() {
+        let firstName = prompt("What is your first name?");
+        let age = prompt("How old are you?");
+        let heading = document.querySelector("h1");
+
+        if (age >= 18) {
+          heading.innerHTML =
+            "Hi " +
+            firstName +
+            " Contact Aerial Fifty Two to book a class with Vanessa!";
+        } else {
+          heading.innerHTML =
+            "Hi " +
+            firstName +
+            ", please have your parent/gaurdian contact Aerial Fifty Two to book a class with Vanessa!";
+        }
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
