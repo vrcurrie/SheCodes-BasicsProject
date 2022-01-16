@@ -1,0 +1,70 @@
+h1 {
+  text-align: center;
+  color: #66bfbf;
+}
+h2 {
+  text-align: center;
+  border: 1px solid #66bfbf;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
+  border-radius: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 13px;
+  margin: 20px 0 10px;
+  font-weight: lighter;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.learnMore {
+  color: #66bfbf;
+  text-decoration: none;
+  font-size: 12px;
+}
+.learnMore:hover {
+  text-decoration: underline;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  background: #66bfbf;
+  color: white;
+  font-size: 18px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px black;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 60px;
+}
+.vaness {
+  color: #66bfbf;
+}
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(216, 241, 230, 0.46) 0.1%,
+    rgba(233, 226, 226, 0.28) 90.1%
+  );
+}
