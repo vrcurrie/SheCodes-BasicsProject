@@ -68,3 +68,7 @@ body {
     rgba(233, 226, 226, 0.28) 90.1%
   );
 }
+a {
+  color: #66bfbf;
+  text-decoration: none;
+}
